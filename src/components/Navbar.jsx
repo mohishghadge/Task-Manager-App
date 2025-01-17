@@ -16,11 +16,19 @@ const Navbar = () => {
     <div className="bg-slate-400 flex flex-col sm:flex-row items-center justify-between px-6 py-4 drop-shadow-md">
       {/* Logo Section */}
       <div className="flex items-center">
-        <img
+      <NavLink
+          to={RouteIndex}
+          className={({ isActive }) =>
+            `${baseButtonClass} ${isActive ? activeClass : inactiveClass}`
+          }
+        >
+       <img
           src={LogoTM}
           alt="Logo"
           className="h-[60px] w-[80px] sm:h-[80px] sm:w-[100px] transition-transform duration-300"
         />
+        </NavLink>
+        
         <img
           src={TickList}
           alt="TickList"
