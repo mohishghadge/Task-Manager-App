@@ -1,7 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import LogoTM from "../../src/assets/LogoTM.png";
-import TickList from "../../src/assets/TickList.png";
+import LogoTM from "../assets/LogoTM.png";
+import TickList from "../assets/TickList.png";
+
 import { RouteIndex, RouteTaskList } from "../helper/RouteName"; // Assuming these routes are defined
 
 const Navbar = () => {
