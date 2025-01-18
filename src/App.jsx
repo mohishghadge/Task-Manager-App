@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage'
 import ShowTask from './pages/ShowTask';
 import TaskListPage from './pages/TaskListPage'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
 
       </Routes>
     </Router>
+    <ToastContainer />
     </>
   )
 }
