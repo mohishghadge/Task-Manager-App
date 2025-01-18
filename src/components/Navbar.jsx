@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import TickList from "../assets/TickList.png";
-import LogoTM from "../assets/LogoTM.png"
+import tickList from "../assets/ticketlist.png";
+import logo from "../assets/logo.png"
 
 import { RouteIndex, RouteTaskList } from "../helper/RouteName"; // Assuming these routes are defined
 
@@ -23,14 +23,14 @@ const Navbar = () => {
           }
         >
        <img
-          src={LogoTM}
+          src={logo}
           alt="Logo"
           className="h-[60px] w-[80px] sm:h-[80px] sm:w-[100px] transition-transform duration-300"
         />
         </NavLink>
         
         <img
-          src={TickList}
+          src={tickList}
           alt="TickList"
           className="h-[40px] w-[120px] sm:h-[60px] sm:w-[140px] ml-4 transition-transform duration-300"
         />
